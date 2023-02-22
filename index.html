@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet"> 
+  <style>
+body {
+background-color: hsl(233, 47%, 7%);
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 15px;
+font-family: 'Inter', sans-serif;
+}
+.i-1 {
+background-color: hsl(244, 38%, 16%);
+width: 52%;
+margin: 1.7rem 1.5rem 0 2rem;
+display: flex;
+flex-direction: column;
+border-radius: 5px 0px 0px 5px;
+}
+.flex {
+display: flex;
+width: 92%;
+margin: auto;
+max-width: 900px;
+justify-content: center;
+background-color:  hsl(244, 38%, 16%);
+border-radius: 5px;
+min-height: 50%;
+}
+* {
+overflow-x: hidden;
+}
+.i-2 {
+width: 48%;
+border-radius: 0px 5px 5px 0px;
+background-color: hsl(277, 58%, 40%);
+}
+.in {
+color: hsl(277, 64%, 61%);
+}
+h1 {
+color: hsl(0, 0%, 100%);
+}
+p {
+color: hsla(0, 0%, 100%, 0.75);
+line-height: 24px;
+} h2 {
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 3px;
+}
+.stat {
+  color: hsla(0, 0%, 100%, 0.6);
+font-family: 'Lexend Deca', sans-serif;
+font-weight: 400;
+margin-top: 0;
+font-size: 14px;
+}
+.c-t-q {
+display: flex;
+justify-content: space-evenly;
+margin-top: 1.8rem;
+}
+img {
+width: 100%;
+height: 100%;
+opacity: 35%;
+object-fit: cover;
+}
+@media  (max-width: 500px) {
+.flex {
+flex-direction: column-reverse;
+text-align: center;
+}
+.i-1, .i-2 {
+width: 100%;
+}
+.i-1 {
+  margin: 0.5rem 0rem 2rem 0rem;
+}
+.c-t-q {
+flex-direction: column;
+justify-content: center;
+}
+p {
+text-align: center;
+}
+.c, .t, .q {
+margin: 4px auto;
+}
+}
+</style>
+</head>
+<body>
+  <div class="flex">
+    <div class="i-1">
+  <h1>Get <span class="in">insights</span> that 
+    help your business grow.</h1>
+
+  <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+  experience, and overall efficiency.</p>
+  <div class="c-t-q">
+  <div class="c"><h2>10k+</h2><span class="stat">companies</span></div>
+  <div class="t"><h2>314</h2><span class="stat">templates</span></div>
+  <div class="q"><h2>12m+</h2><span class="stat">queries</span></div>
+  </div>
+  </div>
+  <div class="i-2">
+    <img src="images/image-header-desktop.jpg">
+  </div>
+  </div>
+</body>
+</html>
